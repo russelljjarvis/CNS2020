@@ -48,7 +48,7 @@
 
 		<h1> Large Scale Discrimination between Neural Models and Experimental Data 	</h1>
 		<h2> Russell Jarvis <sup>1,2,3 *</sup>, Sharon Crook <sup>1 *</sup>, 
-			&#201;Richard Gerkin <sup>4</sup>, <sup>1</sup></h2>
+			Richard Gerkin <sup>4</sup>, <sup>1</sup></h2>
 	</div>
 	<div style="float:left; width:450px; margin-top: 20px; margin-left:40px">
 		<p style="color:#BEE4DA; font-style: italic;" >
@@ -86,9 +86,11 @@
 			</div>
 
 			<div id = "box"; style="text-align:center; margin-top:0px">
-				<video loop autoplay height=325px style="margin-top:25px" >
-						<source src="https://www.dropbox.com/s/u8nmsjcjt4w5yth/fish_seizure.mov?raw=1" type="video/mp4">
-				</video>
+				<img class = "frontpage" src = "Images/timing_and_after_spike_depth.png" style="width:350px; height:auto; margin-bottom:75px; margin-left:0px">
+				<!--==============================================================
+
+				<image src="Images/timing_and_after_spike_depth.png", width=450px></image>
+				-->
 			</div>
 
 		</div>
@@ -112,10 +114,10 @@
 
 			<div id = "box";  style="text-align:center; margin-top:0px">
 
-				<video loop autoplay height=325px style="margin-top:25px">
+				<!--<video loop autoplay height=325px style="margin-top:25px">
 						<source src="https://www.dropbox.com/s/ncvgzqt12i3l3he/Correlation_matrix.mov?raw=1" type="video/mp4">
-				</video>
-				<!-- <img class = "frontpage" src = "Images/Fig_3_NNMF_Net.png" style="width:450px; height:auto; margin-top:75px; margin-left:0px"> -->
+				</video>-->
+				<img class = "frontpage" src = "Images/spiking.png" style="width:450px; height:auto; margin-top:75px; margin-left:0px">
 			</div>
 		</div>
 
@@ -128,39 +130,45 @@
 		<!--==============================================================-->
 		<div id = "doublebox-top"; onclick='togglevis(3)'>
 			<div id = "box"; style="text-align:center; margin-top:0px">
-				<video id = "NMF_rotate" loop autoplay height=325px style="margin-top:25px">
-						<source src="https://www.dropbox.com/s/i47l9m9ousqbsx6/Fig_2_NMF_Rotation.mov?raw=1" type="video/mp4">
-				</video>
+				<img class = "frontpage" src = "Images/PCA.png" style="width:350px; height:auto; margin-bottom:95px; margin-left:0px"> 
+
 			</div>
 
 			<div id = "box"; tabindex = "3">
 				<div id = "textbox">
 					<h3 class = "boxhead"> We used Dimensionality Reduction to examine the degree of separability between modeled neuron electrical recordings and real electrical recordings from actual neurons.</h3>
 					<ul class = "normtext">
-
-
-					If biologically realistic models were better at imitating real experimental cells, then data and models would not easily be discriminable. By plotting a 48 dimensional feature space onto a two dimensional projection space, I show that a diverse pool of data and models are readily discriminated via Random Forest Classification, a result, that leaves even some of the most optimized models lacking. The idea is that the models which are the most resistant to being correctly machine-classified as models (therefore being misclassified as data), serve as better imitations/mimics of experimental data. I also used random forest regression to investigate when experimental data inform a classifying statistical model which dimensions explain the most of the observed variance in the feature space. Variance-explained will facilitate the production of a list of improvements to make to our models in order to render models better imitations of real data.
-
-					In this project you can see use of:
-					* PCA, t-Distributed Stochastic Neighbor Embedding (t-SNE).
-					* Random Forest Classification (RFC) using 38 features, and also RFC applied to just 2 features (output from PCA).
-					* using the RFC "variance-explained" feature. 
-					* Plotting of a decision boundary. (need to redo). 
-					* Not done yet, but pending Cross-Validation using looping over many different test/train splits.
-
-			
+					<li>If biologically realistic models were better at imitating real experimental cells, then data and models would not easily be discriminable. By plotting a 48 dimensional feature space onto a two dimensional projection space, I show that a diverse pool of data and models are readily discriminated via Random Forest Classification, a result, that leaves even some of the most optimized models lacking. The idea is that the models which are the most resistant to being correctly machine-classified as models (therefore being misclassified as data), serve as better imitations/mimics of experimental data. I also used random forest regression to investigate when experimental data inform a classifying statistical model which dimensions explain the most of the observed variance in the feature space. Variance-explained will facilitate the production of a list of improvements to make to our models in order to render models better imitations of real data.
+					In this project you can see use of:</li>
+					PCA, t-Distributed Stochastic Neighbor Embedding (t-SNE).
+					Random Forest Classification (RFC) using 38 features, and also RFC applied to just 2 features (output from PCA).
+					using the RFC "variance-explained" feature. 
+					Plotting of a decision boundary. (need to redo). 
+					Not done yet, but pending Cross-Validation using looping over many different test/train splits.
 					### Model Optimization as a data pre-processing stage.
 					Before Machine Learning and analysis techniques could be applied, we needed to find optimized models. These optimized models can be understood as models that are intended to be superior mimics of real biologically derived data, as their governing equation parameters have been more rigorously constrained  by a wider range of experimental data.
-
 					In order illustrate that the optimized models are better imitations of real data, four adaptive Exponential models, and four Izhikevich models each were fitted to four different classes of experimental cells see implementation in ipython notebook [Notebook](https://github.com/russelljjarvis/neuronunit/blob/master/neuronunit/examples/seperate_out_data_new_models.ipynb). These eight fitted models were subsequently fed into a Druckman feature extraction algorithm, and added as data points in a dimension reduced plot of the feature space. Many pre-existing neural models, and some Allen Brain Data where also plotted as contextual data in the same feature space.
-
 					## Project Implementation and Technologies
+                    <li>* Python, pandas sklearn, dask were all used for Model
+                     Optimization pre-processing steps, and for plotting the models in a dimension reduced
+                      feature space.</li>
+					<li> Models versus Data. Models which are 
+                        resistant to being classified as models are more successful, and better representatives of data.
+                         See below.</li>
+					<li>* The optimized cells were derived from a
+                         custom built parallel genetic algorithm, utilizing pre-existing python tools:
+                          ***DEAP*** and ***Dask***. It would have been desirable to optimize the models 
+                          with an algorithm from this course, such as  Lasso, 
+                          ridge regression, and elastic search (L1+L2)/2 regularization combined.
+                           The way I do this is to run a genetic algorithm over the data,
+                            The genetic algorithm is performing its own type of guided sparse sampling of the data.</li>
 
-					* Python, pandas sklearn, dask were all used for Model Optimization pre-processing steps, and for plotting the models in a dimension reduced feature space.
-					* Models versus Data. Models which are resistant to being classified as models are more successful, and better representatives of data. See below.
-					* The optimized cells were derived from a custom built parallel genetic algorithm, utilizing pre-existing python tools: ***DEAP*** and ***Dask***. It would have been desirable to optimize the models with an algorithm from this course, such as  Lasso, ridge regression, and elastic search (L1+L2)/2 regularization combined. The way I do this is to run a genetic algorithm over the data, The genetic algorithm is performing its own type of guided sparse sampling of the data.
-
-					<li>The Druckman feature analysis protocol originates from MATLAB code associated with the analysis of Blue Brain Project Modelled cells, this feature analysis pipeline was then ported to Python by Justas Birgiolas, at a later point I made the feature analysis pipeline applicable to optimized Adaptive Exponential and Izhiketch cells. Rick Gerkin and Vergil Haynes, assisted in data cleaning preperation and TSNE application.</li>
+					<li>The Druckman feature analysis protocol originates from MATLAB code associated with the 
+                        analysis of Blue Brain Project Modelled cells, this feature analysis pipeline was 
+                        then ported to Python by Justas Birgiolas, at a later point 
+                        I made the feature analysis pipeline applicable to optimized Adaptive Exponential 
+                        and Izhiketch cells. Rick Gerkin and Vergil Haynes, assisted in data 
+                        cleaning preperation and TSNE application.</li>
 					<!--==============================================================
 						<li> We performed light sheet imaging of 3-4 PTU-raised wildtype, <em>gabra1 -/-</em>, and <em>gabrg2 -/-</em> larvae at 6-8dpf</li>
 						<li> Both <em>gabra1 -/-</em>, and <em>gabrg2 -/-</em> larvae show patterns of hyuperexcitability in response to light stimulation</li>
@@ -177,22 +185,44 @@
 		<!--==============================================================-->
 		<div id = "doublebox-bottom"; onclick='togglevis(4)'>
 			<div id = "box">
-				<img class = "frontpage" src = "Images/Fig_4_DCM_Method.png" style="width:400px; height:auto; margin-top:60px; margin-left:25px">
+				<img class = "frontpage" src = "Images/TSNE.png" style="width:350px; height:auto; margin-top:40px; margin-left:25px">
 			</div>
 
 			<div id = "box"; tabindex = "4">
 			<div id = "textbox">
-				<h3 class = "boxhead">GABA subunit knockouts affect distinct parts of synaptic network coupling</h3>
+				<h3 class = "boxhead">Broader Project Context and Background</h3>
 				<ul class = "normtext">
-					### Broader Project Context and Background:
 
-					There is a great diversity of real biological neurons, all of which differ substantially in their electrical behavior. There are a few different classes of general purpose neuronal models, that can reproduce these different types of electrical behaviours, given appropriate parameterizations of the models.
-
-					An exisiting class of neuron model type, called The Izhikevich model was published with parameter sets believed to make the model outputs accurately align with a variety of real biological cell outputs. However since publication much very specific electro physiological recordings have accumulated, that in someways undermine model/experiment agreement. However it is now possible to constrain the Izhikevich model and find new parameterizations that more allow us to more accurately reproduce more recently published experimental data.
-
-					In contrast to other projects that seek to use features to seperate and classify two different categories of things that are hard to tell apart, such that humans can benefit from a fast classification of hard to discern differences in high dimensional spaces. In this project the goal is to use resistance to classification as an indicator of an optimization algorithms success, and to use machine seperation of data categories as an error signal, that directs us to precise locations of model failure. Another way of saying this, is, if a good/fair attempt at machine classification is hard, then then a different machine learning algorithm did a good job. If machine classification is very easy, the optimization algorithm did a poor job.
-
-					The application of TSNE to data was developed in a research team context on different data pertaining to ion channels, or the APs exclusively derived from models (as opposed to a combination of models and data). In the context of this project, I have used novel experimental data (pulled from the Allen Brain Portal API) and novel models (8 optimized cell models included), so I have re-applied a small amount of code from pre-established work, but I have made substantial novel contributions, by looking at different features, applying different feature engineering, applying Random Forest Classification, applying variance explained, and interpreting results. For a comparison to other pre-established work that informed this work check [here](https://github.com/vrhaynes/LargeScaleModelAnalysis_2019/blob/master/model-data-clustering.ipynb)
+					<li> There is a great diversity of real biological neurons, </li>
+					<li> all of which differ substantially in their electrical behavior. </li>
+					<li> 	There are a few different classes of general purpose neuronal models,</li>
+					<li> 	 that can reproduce these different types of electrical behaviours, </li>
+					<li> 	given appropriate parameterizations of the models.</li>
+					<li> An exisiting class of neuron model type, called The Izhikevich model was </li>
+					<li> published with parameter sets believed to make the model outputs accurately align </li>
+					<li> with a variety of real biological cell outputs. However since publication much very</li>
+					<li>  specific electro physiological recordings have accumulated, </li>
+					<li> 		that in someways undermine model/experiment agreement. However it is now possible</li>
+					<li> 		 to constrain the Izhikevich model and find new parameterizations that more allow us to </li>
+					<li> 		 more accurately reproduce more recently published experimental data.</li>
+					<li> In contrast to other projects that seek to use features to seperate and classify two</li>
+					<li>  different categories of things that are hard to tell apart, such that humans can benefit </li>
+					<li>  from a fast classification of hard to discern differences in high dimensional spaces. </li>
+					<li>  In this project the goal is to use resistance to classification as an indicator of an </li>
+					<li>   optimization algorithms success, and to use machine seperation of data categories as </li>
+					<li>   an error signal, that directs us to precise locations of model failure. Another way of </li>
+					<li> 	writing this, is, if a good/fair attempt at machine classification is hard, then then a </li>
+					<li> 	 different machine learning algorithm did a good job. If machine classification is very easy, </li>
+					<li> 	 the optimization algorithm did a poor job.</li>
+					<li> The application of TSNE to data was developed in a research team context on different data </li>
+					<li>	pertaining to ion channels, or the APs exclusively derived from models (as opposed to a combination </li>
+					<li>	 of models and data). In the context of this project, I have used novel experimental data </li>
+					<li>	 (pulled from the Allen Brain Portal API) and novel models (8 optimized cell models included), </li>
+					 so I have re-applied a small amount of code from pre-established work, 
+					 but I have made substantial novel contributions, by looking at different features,
+					  applying different feature engineering, applying Random Forest Classification,
+					   applying variance explained, and interpreting results. For a comparison to other
+					    pre-established work that informed this work check [here](https://github.com/vrhaynes/LargeScaleModelAnalysis_2019/blob/master/model-data-clustering.ipynb)
 					<!--==============================================================
 
 					<li> distributed difference in functional connectivity may result from more localised differences in effective connectivity </li>
@@ -210,22 +240,20 @@
 
 	<!-- MIDDLE BIT-->
 	<div id = "central" class = "1" style = "display:none">
-		<iframe id = "centrali"; src = "CNS_poster_short.html"></iframe>
+		<iframe id = "centrali"; src = "decision_boundary_dimension_reduced_TSNE.html"></iframe>
 	</div>
 
 	<div id = "central" class = "2" style = "display:none">
-		<iframe id = "centrali"; src = "CNS_poster_short.html"></iframe>
+		<iframe id = "centrali"; src = "Everything_3D_scatter_plot.html"></iframe>
 	</div>
 
 	<div id = "central" class = "3" style = "display:none">
-		<iframe id = "centrali"; src = "CNS_poster_short.html"></iframe>
+		<iframe id = "centrali"; src = "dimension_reduced_PCA.html"></iframe>
 	</div>
 
 	<div id = "central" class = "4" style = "display:none">
-		<iframe id = "centrali"; src = "CNS_poster_short.html"></iframe>
+		<iframe id = "centrali"; src = "dimension_reduced_TSNE.html"></iframe>
 	</div>
-
-
 
 
 	<!-- 	<div id = "box"; style="background:#ccc;"> Introduction </div>
@@ -251,16 +279,13 @@
 			</td>
 
 
+
 			<td width = 10% style = "text-align: center; vertical-align: middle">
-					<img src = "Images/Liao_et_al.png" height = 65 style = "margin-top: 0px">
-					<p class=smaller style="text-align:center; color:white; margin-top:2px">
-						<b>Liao et al 2019</b><br />
-						<em>GABRG2 characterisation</em>
-					</p>
+
 
 				</td>
 				<td width = 10% style = "text-align: center; vertical-align: middle">
-					<img src = "Images/Samarut_et_al.png" height = 65 style = "margin-top: 0px">
+
 					<p class=smaller style="text-align:center; color:white; margin-top:2px">
 						<b>Samarut et al 2018</b><br />
 						<em>GABRA1 characterisation</em>
