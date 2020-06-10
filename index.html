@@ -3,7 +3,7 @@
 <html>
 <head>
 
-	<title>CNS Poster Jarvis et al 2019</title>
+	<title>CNS Poster Jarvis et al 2020</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<script>
@@ -48,7 +48,7 @@
 
 		<h1> Large Scale Discrimination between Neural Models and Experimental Data 	</h1>
 		<h2> Russell Jarvis <sup>1,2,3 *</sup>, Sharon Crook <sup>1 *</sup>, 
-			&#201;. Richard Gerkin <sup>4</sup>, <sup>1</sup></h2>
+			&#201;Richard Gerkin <sup>4</sup>, <sup>1</sup></h2>
 	</div>
 	<div style="float:left; width:450px; margin-top: 20px; margin-left:40px">
 		<p style="color:#BEE4DA; font-style: italic;" >
@@ -148,16 +148,7 @@
 					* Plotting of a decision boundary. (need to redo). 
 					* Not done yet, but pending Cross-Validation using looping over many different test/train splits.
 
-					### Broader Project Context and Background:
-
-					There is a great diversity of real biological neurons, all of which differ substantially in their electrical behavior. There are a few different classes of general purpose neuronal models, that can reproduce these different types of electrical behaviours, given appropriate parameterizations of the models.
-
-					An exisiting class of neuron model type, called The Izhikevich model was published with parameter sets believed to make the model outputs accurately align with a variety of real biological cell outputs. However since publication much very specific electro physiological recordings have accumulated, that in someways undermine model/experiment agreement. However it is now possible to constrain the Izhikevich model and find new parameterizations that more allow us to more accurately reproduce more recently published experimental data.
-
-					In contrast to other projects that seek to use features to seperate and classify two different categories of things that are hard to tell apart, such that humans can benefit from a fast classification of hard to discern differences in high dimensional spaces. In this project the goal is to use resistance to classification as an indicator of an optimization algorithms success, and to use machine seperation of data categories as an error signal, that directs us to precise locations of model failure. Another way of saying this, is, if a good/fair attempt at machine classification is hard, then then a different machine learning algorithm did a good job. If machine classification is very easy, the optimization algorithm did a poor job.
-
-					The application of TSNE to data was developed in a research team context on different data pertaining to ion channels, or the APs exclusively derived from models (as opposed to a combination of models and data). In the context of this project, I have used novel experimental data (pulled from the Allen Brain Portal API) and novel models (8 optimized cell models included), so I have re-applied a small amount of code from pre-established work, but I have made substantial novel contributions, by looking at different features, applying different feature engineering, applying Random Forest Classification, applying variance explained, and interpreting results. For a comparison to other pre-established work that informed this work check [here](https://github.com/vrhaynes/LargeScaleModelAnalysis_2019/blob/master/model-data-clustering.ipynb)
-
+			
 					### Model Optimization as a data pre-processing stage.
 					Before Machine Learning and analysis techniques could be applied, we needed to find optimized models. These optimized models can be understood as models that are intended to be superior mimics of real biologically derived data, as their governing equation parameters have been more rigorously constrained  by a wider range of experimental data.
 
@@ -193,10 +184,22 @@
 			<div id = "textbox">
 				<h3 class = "boxhead">GABA subunit knockouts affect distinct parts of synaptic network coupling</h3>
 				<ul class = "normtext">
+					### Broader Project Context and Background:
+
+					There is a great diversity of real biological neurons, all of which differ substantially in their electrical behavior. There are a few different classes of general purpose neuronal models, that can reproduce these different types of electrical behaviours, given appropriate parameterizations of the models.
+
+					An exisiting class of neuron model type, called The Izhikevich model was published with parameter sets believed to make the model outputs accurately align with a variety of real biological cell outputs. However since publication much very specific electro physiological recordings have accumulated, that in someways undermine model/experiment agreement. However it is now possible to constrain the Izhikevich model and find new parameterizations that more allow us to more accurately reproduce more recently published experimental data.
+
+					In contrast to other projects that seek to use features to seperate and classify two different categories of things that are hard to tell apart, such that humans can benefit from a fast classification of hard to discern differences in high dimensional spaces. In this project the goal is to use resistance to classification as an indicator of an optimization algorithms success, and to use machine seperation of data categories as an error signal, that directs us to precise locations of model failure. Another way of saying this, is, if a good/fair attempt at machine classification is hard, then then a different machine learning algorithm did a good job. If machine classification is very easy, the optimization algorithm did a poor job.
+
+					The application of TSNE to data was developed in a research team context on different data pertaining to ion channels, or the APs exclusively derived from models (as opposed to a combination of models and data). In the context of this project, I have used novel experimental data (pulled from the Allen Brain Portal API) and novel models (8 optimized cell models included), so I have re-applied a small amount of code from pre-established work, but I have made substantial novel contributions, by looking at different features, applying different feature engineering, applying Random Forest Classification, applying variance explained, and interpreting results. For a comparison to other pre-established work that informed this work check [here](https://github.com/vrhaynes/LargeScaleModelAnalysis_2019/blob/master/model-data-clustering.ipynb)
+					<!--==============================================================
+
 					<li> distributed difference in functional connectivity may result from more localised differences in effective connectivity </li>
 					<li> dynamic causal modelling (DCM) allows us to estimate parameters of a biophysical population model based on the observed data</li>
 					<li> we find genotype specific differences in network connectivity of these model descriptions </li>
 					<li> <strong> GABA subunit knockouts may target anatomically or physiologically defined subsets of GABAergic synapses</strong></li>
+					-->
 				</ul>
 
 			</div>
@@ -215,11 +218,11 @@
 	</div>
 
 	<div id = "central" class = "3" style = "display:none">
-		<iframe id = "centrali"; src = "nmf_states.html"></iframe>
+		<iframe id = "centrali"; src = "CNS_poster_short.html"></iframe>
 	</div>
 
 	<div id = "central" class = "4" style = "display:none">
-		<iframe id = "centrali"; src = "simulations.html"></iframe>
+		<iframe id = "centrali"; src = "CNS_poster_short.html"></iframe>
 	</div>
 
 
@@ -238,17 +241,11 @@
 				<img src = "Images/Photos.png" height = 90 style = "">
 			</td>
 
-			<td width = 8% >
-				<p style = "font-size:12pt; text-align:left; color:white">
-					<b> Richard E Rosch </b> <br /> <em>MD PhD</em>
-				</p>
-			</td>
+		
 			<td width = 20%>
 				<p style = "font-size:10pt">
-					<img src = "Images/email.png" class = "icon"> <a href = "mailto:richard.rosch@kcl.ac.uk"> richard.rosch@kcl.ac.uk</a> <br>
-					<img src = "Images/url.png" class = "icon"> <a href = "http://www.dynamic-brains.com"> dynamic-brains.com </a> <br>
-					<img src = "Images/github.png" class = "icon"> <a href = "https://github.com/roschkoenig/Zebrafish_Seizures"> github.com/roschkoenig </a><br>
-					<img src = "Images/twitter.png" class = "icon"> <a href = "http://www.twitter.com/roschkoenig"> @roschkoenig</a> <br>
+					<img src = "Images/email.png" class = "icon"> <a href = "mailto:rjjarvis@asu.edu"> Russell Jarvis </a> <br>
+					<img src = "Images/github.png" class = "icon"> <a href = "https://github.com/"> github.com/russelljjarvis </a><br>
 				</p>
 
 			</td>
