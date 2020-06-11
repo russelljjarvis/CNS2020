@@ -53,9 +53,9 @@
 	<div style="float:left; width:450px; margin-top: 20px; margin-left:40px">
 		<p style="color:#BEE4DA; font-style: italic;" >
 			1 - Arizona State University, Neuroscience Program, School of Life Sciences, ASU, Phoenix, USA;
-			2 - Complex Systems Group, Department of Bioengineering, University of Pennsylvania, Philadelphia PA, USA;
-			3 - Department of Paediatric Neurology, Great Ormond Street Hospital NHS Foundation Trust, London, UK;
-			4 - Department of Neurosciences, Research Centre of the University of Montreal Hospital Center, Montreal QC, Canada; <br /><br />
+			2 - Place holder
+			3 - Place holder
+			4 - Place holder <br /><br />
 			<b>* These authors contributed equally</b>
 		</p>
 		</div>
@@ -75,10 +75,19 @@
 		<div id = "doublebox-top"; onclick='togglevis(1)'>
 			<div id = "box"; tabindex = "1";>
 			<div id = "textbox">
-				<h3 class = "boxhead"> Place holder <em>gabra1</em> and <em>gabrg2</em> cause epileptic phenotypes in zebrafish  </h3>
+				<h3 class = "boxhead">  Place holder  </h3>
 				<ul class = "normtext">
 					
-					<li> <strong> Place holder  </strong>
+					<li> 
+						I also used random forest regression to investigate when experimental data inform a classifying statistical model which dimensions explain the most of the observed variance in the feature space. Variance-explained will facilitate the production of a list of improvements to make to our models in order to render models better imitations of real data.
+						In this project you can see use of:</li>
+						PCA, t-Distributed Stochastic Neighbor Embedding (t-SNE).
+						Random Forest Classification (RFC) using 38 features, and also RFC applied to just 2 features (output from PCA).
+						using the RFC "variance-explained" feature. 
+						Plotting of a decision boundary. (need to redo). 
+						Not done yet, but pending Cross-Validation using looping over many different test/train splits.
+
+					</li>
 				</ul>
 			</div>
 			</div>
@@ -101,8 +110,22 @@
 				<div id = "textbox">
 					<h3 class = "boxhead">Place holder </h3>
 					<ul class = "normtext">
-						<li> <strong> Place holder
-						</strong></li>
+						<li> <strong> 
+							<em> Model Optimization as a data pre-processing stage.</em> </strong></li>
+							Before Machine Learning and analysis techniques could be applied,
+							 we needed to find optimized models. These optimized 
+							 models can be understood as models that are intended to 
+							 be superior mimics of real biologically derived data, as 
+							 their governing equation parameters have been more rigorously 
+							 constrained  by a wider range of experimental data.
+							In order illustrate that the optimized models are better 
+							imitations of real data, four adaptive Exponential models, and 
+							four Izhikevich models each were fitted to four different classes 
+							of experimental cells see implementation in ipython notebook 
+							These eight fitted models were subsequently fed into a 
+							Druckman feature extraction algorithm, and added as data points in a dimension reduced plot of the feature space. Many pre-existing neural models, and some Allen Brain Data where also plotted as contextual data in the same feature space.
+							## Project Implementation and Technologies
+						
 					</ul>
 				</div>
 			</div>
@@ -131,26 +154,23 @@
 
 			<div id = "box"; tabindex = "3">
 				<div id = "textbox">
-					<h3 class = "boxhead"> We used Dimensionality Reduction to examine the degree of separability between modeled neuron electrical recordings and real electrical recordings from actual neurons.</h3>
+					<h3 class = "boxhead"> We used Dimensionality Reduction to examine the
+						 separability between in-silico recordings 
+						 and experimental electrical recordings </h3>.
 					<ul class = "normtext">
-					<li>If biologically realistic models were better at imitating real experimental cells, then data and models would not easily be discriminable. By plotting a 48 dimensional feature space onto a two dimensional projection space, I show that a diverse pool of data and models are readily discriminated via Random Forest Classification, a result, that leaves even some of the most optimized models lacking. The idea is that the models which are the most resistant to being correctly machine-classified as models (therefore being misclassified as data), serve as better imitations/mimics of experimental data. I also used random forest regression to investigate when experimental data inform a classifying statistical model which dimensions explain the most of the observed variance in the feature space. Variance-explained will facilitate the production of a list of improvements to make to our models in order to render models better imitations of real data.
-					In this project you can see use of:</li>
-					PCA, t-Distributed Stochastic Neighbor Embedding (t-SNE).
-					Random Forest Classification (RFC) using 38 features, and also RFC applied to just 2 features (output from PCA).
-					using the RFC "variance-explained" feature. 
-					Plotting of a decision boundary. (need to redo). 
-					Not done yet, but pending Cross-Validation using looping over many different test/train splits.
-					### Model Optimization as a data pre-processing stage.
-					Before Machine Learning and analysis techniques could be applied, we needed to find optimized models. These optimized models can be understood as models that are intended to be superior mimics of real biologically derived data, as their governing equation parameters have been more rigorously constrained  by a wider range of experimental data.
-					In order illustrate that the optimized models are better imitations of real data, four adaptive Exponential models, and four Izhikevich models each were fitted to four different classes of experimental cells see implementation in ipython notebook [Notebook](https://github.com/russelljjarvis/neuronunit/blob/master/neuronunit/examples/seperate_out_data_new_models.ipynb). These eight fitted models were subsequently fed into a Druckman feature extraction algorithm, and added as data points in a dimension reduced plot of the feature space. Many pre-existing neural models, and some Allen Brain Data where also plotted as contextual data in the same feature space.
-					## Project Implementation and Technologies
-                    <li>* Python, pandas sklearn, dask were all used for Model
+					<li>If biologically realistic models were better at imitating real experimental cells,
+						 then data and models would not easily be discriminable. By plotting a 48 dimensional feature space onto a two dimensional projection space, I show that a diverse pool of data and models are readily discriminated via Random Forest Classification, a result, that leaves even some of the most optimized models lacking. The idea is that the models 
+						which are the most resistant to being correctly machine-classified
+						 as models (therefore being misclassified as data), serve as better
+						  imitations/mimics of experimental data.
+					<!--
+                    <li> Python, pandas sklearn, dask were all used for Model
                      Optimization pre-processing steps, and for plotting the models in a dimension reduced
                       feature space.</li>
 					<li> Models versus Data. Models which are 
                         resistant to being classified as models are more successful, and better representatives of data.
                          See below.</li>
-					<li>* The optimized cells were derived from a
+					<li> The optimized cells were derived from a
                          custom built parallel genetic algorithm, utilizing pre-existing python tools:
                           ***DEAP*** and ***Dask***. It would have been desirable to optimize the models 
                           with an algorithm from this course, such as  Lasso, 
@@ -164,11 +184,6 @@
                         I made the feature analysis pipeline applicable to optimized Adaptive Exponential 
                         and Izhiketch cells. Rick Gerkin and Vergil Haynes, assisted in data 
                         cleaning preperation and TSNE application.</li>
-					<!--==============================================================
-						<li> We performed light sheet imaging of 3-4 PTU-raised wildtype, <em>gabra1 -/-</em>, and <em>gabrg2 -/-</em> larvae at 6-8dpf</li>
-						<li> Both <em>gabra1 -/-</em>, and <em>gabrg2 -/-</em> larvae show patterns of hyuperexcitability in response to light stimulation</li>
-						<li> The predominant different in overall activity distribution occurs early after light exposure </li>
-						<li> <strong> Brain-wide light-induced responses in the different lines are separable in even a low dimensional representation  </strong></li>
 					-->
 					</ul>
 				</div>
@@ -180,20 +195,20 @@
 		<!--==============================================================-->
 		<div id = "doublebox-bottom"; onclick='togglevis(4)'>
 			<div id = "box">
-				<img class = "frontpage" src = "Images/TSNE.png" style="width:350px; height:auto; margin-top:40px; margin-left:25px">
+				<img class = "frontpage" src = "Images/TSNE.png" style="width:350px; height:auto; margin-top:40px; margin-left:60px">
 			</div>
 
 			<div id = "box"; tabindex = "4">
 			<div id = "textbox">
-				<h3 class = "boxhead">Broader Project Context and Background</h3>
+				<h3 class = "boxhead">Project Background</h3>
 				<ul class = "normtext">
 
-					<li> There is a great diversity of real biological neurons, </li>
-					<li> all of which differ substantially in their electrical behavior. </li>
+					<li> There is a great diversity of real biological neurons,
+					all of which differ substantially in their electrical behavior. </li>
 					<li> 	There are a few different classes of general purpose neuronal models,</li>
 					<li> 	 that can reproduce these different types of electrical behaviours, </li>
 					<li> 	given appropriate parameterizations of the models.</li>
-					<li> An exisiting class of neuron model type, called The Izhikevich model was </li>
+					<!---<li> An exisiting class of neuron model type, called The Izhikevich model was </li>
 					<li> published with parameter sets believed to make the model outputs accurately align </li>
 					<li> with a variety of real biological cell outputs. However since publication much very</li>
 					<li>  specific electro physiological recordings have accumulated, </li>
@@ -218,13 +233,7 @@
 					  applying different feature engineering, applying Random Forest Classification,
 					   applying variance explained, and interpreting results. For a comparison to other
 					    pre-established work that informed this work check [here](https://github.com/vrhaynes/LargeScaleModelAnalysis_2019/blob/master/model-data-clustering.ipynb)
-					<!--==============================================================
-
-					<li> distributed difference in functional connectivity may result from more localised differences in effective connectivity </li>
-					<li> dynamic causal modelling (DCM) allows us to estimate parameters of a biophysical population model based on the observed data</li>
-					<li> we find genotype specific differences in network connectivity of these model descriptions </li>
-					<li> <strong> GABA subunit knockouts may target anatomically or physiologically defined subsets of GABAergic synapses</strong></li>
-					-->
+						-->
 				</ul>
 
 			</div>
@@ -261,13 +270,13 @@
 		<tr height = 100px>
 
 			<td width = 8% style = "text-align: center; vertical-align: middle">
-				<img src = "Images/Photos.png" height = 90 style = "">
+				<img src = "Images/" height = 90 style = "">
 			</td>
 
 		
 			<td width = 20%>
 				<p style = "font-size:10pt">
-					<img src = "Images/email.png" class = "icon"> <a href = "mailto:rjjarvis@asu.edu"> Russell Jarvis </a> <br>
+					<img src = "Images/" class = "icon"> <a href = "mailto:rjjarvis@asu.edu"> Russell Jarvis </a> <br>
 					<img src = "Images/github.png" class = "icon"> <a href = "https://github.com/"> github.com/russelljjarvis </a><br>
 				</p>
 
@@ -282,24 +291,20 @@
 				<td width = 10% style = "text-align: center; vertical-align: middle">
 
 					<p class=smaller style="text-align:center; color:white; margin-top:2px">
-						<b>Samarut et al 2018</b><br />
-						<em>GABRA1 characterisation</em>
+						<b>place holder</b><br />
+						<em>place holder</em>
 					</p>
 				</td>
 				<td width = 10% style = "text-align: center; vertical-align: middle">
-					<img src = "Images/Rosch_et_al.png" height = 65 style = "margin-top: 0px">
+					<img src = "Images/" height = 65 style = "margin-top: 0px">
 					<p class=smaller style="text-align:center; color:white; margin-top:2px">
-						<b>Rosch et al 2018</b><br />
-						<em>Network Analysis</em>
+						<b>Place holder</b><br />
+						<em>Place holder</em>
 					</p>
 
 			</td>
 
 			<td width = 70% style = "text-align: right; vertical-align: middle">
-				<!---<img src = "Images/MRC_CNDD.png" height = 45 style = "margin-left:25px; margin-bottom: 23px">
-				<img src = "Images/PENN.png" height = 40 style = "margin-left:25px; margin-bottom: 25px">
-				<img src = "Images/CRCHUM.png" height = 45 style = "margin-left:25px; margin-bottom: 23px">
-				<img src = "Images/WT.png" height = 70 style = "margin-left:25px; margin-bottom:10px">-->
 			</td>
 
 		</tr>
