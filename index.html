@@ -48,14 +48,14 @@
 
 		<h1> Large Scale Discrimination between Neural Models and Experimental Data </h1>
 		<h2> Russell Jarvis <sup>1 *</sup>, Sharon Crook <sup>1,2 *</sup>, 
-			Richard Gerkin <sup>1</sup> </h2>
+			Richard Gerkin <sup>3 *</sup> </h2>
 	</div>
 	<div style="float:left; width:450px; margin-top: 20px; margin-left:40px">
 		<p style="color:#BEE4DA; font-style: italic;" >
 			1 - Arizona State University, Neuroscience Program, School of Life Sciences, ASU, Phoenix, USA;
-			2 - Place holder
-			3 - Place holder
-			4 - Place holder <br /><br />
+			2 - School of Mathematical and Statistical Sciences, ASU, Tempe
+			3 - School of Life Sciences, ASU, Tempe
+			<br /><br />
 			<b>* These authors contributed equally</b>
 		</p>
 		</div>
@@ -71,22 +71,68 @@
 	<div id = "side"; style="left:0px; background:#eeeeee">
 		<!--==============================================================-->
 		<!-- Top Left No 1 -->
-		<!--==============================================================-->
+		<!--
+			
+		I also used random forest regression to investigate when experimental data inform a classifying statistical model which dimensions explain the most of the observed variance in the feature space. Variance-explained will facilitate the production of a list of improvements to make to our models in order to render models better imitations of real data.
+		In this project you can see use of:</li>
+		PCA, t-Distributed Stochastic Neighbor Embedding (t-SNE).
+		Random Forest Classification (RFC) using 38 features, and also RFC applied to just 2 features (output from PCA).
+		using the RFC "variance-explained" feature. 
+		Plotting of a decision boundary. (need to redo). 
+		Not done yet, but pending Cross-Validation using looping over many different test/train splits.
+
+			
+			==============================================================-->
 		<div id = "doublebox-top"; onclick='togglevis(1)'>
 			<div id = "box"; tabindex = "1";>
 			<div id = "textbox">
-				<h3 class = "boxhead">  Place holder  </h3>
+				<h3 class = "boxhead">  Abstract  </h3>
 				<ul class = "normtext">
 					
 					<li> 
-						I also used random forest regression to investigate when experimental data inform a classifying statistical model which dimensions explain the most of the observed variance in the feature space. Variance-explained will facilitate the production of a list of improvements to make to our models in order to render models better imitations of real data.
-						In this project you can see use of:</li>
-						PCA, t-Distributed Stochastic Neighbor Embedding (t-SNE).
-						Random Forest Classification (RFC) using 38 features, and also RFC applied to just 2 features (output from PCA).
-						using the RFC "variance-explained" feature. 
-						Plotting of a decision boundary. (need to redo). 
-						Not done yet, but pending Cross-Validation using looping over many different test/train splits.
 
+						Scientific insight is well-served by the discovery and optimization of 
+						abstract models that can reproduce experimental findings. 
+						NeuroML (NeuroML.org), a model description language for neuroscience,
+						facilitates reproducibility and exchange of such models by providing an 
+						implementation-agnostic model description in a modular format. 
+						NeuronUnit (neuronunit.scidash.org) evaluates model accuracy by subjecting 
+						models to experimental data-driven validation tests, 
+						a formalization of the scientific method. 
+
+
+						A neuron model that perfectly imitated real neuronal electrical behavior 
+						in response to any stimulus would not be distinguishable from experiments 
+						by any conventional physiological measurement.  
+						In order to assess whether existing neuron models approached this standard,
+						 we took 972 existing neuron models from NeuroML-DB.org and subjected them 
+						 to a standard series of electrophysiological stimuli 
+						 (somatic current injection waveforms).  
+						 
+						 We then extracted analogous 
+						 448 stimulus-evoked recordings of real cortical neurons from the 
+						 Allen Cell Types database. We applied multiple feature extraction 
+						 algorithms on the physiological responses of both model simulations
+						  and experimental recordings in order to characterize physiological 
+						  behavior with a very high degree of detail spanning hundreds of features.
+
+
+						After applying dimensionality reduction to this very high dimensional 
+						feature space, we show that the real (biological neurons) and simulated 
+						(model neurons) recordings are easily and fully discriminated by eye or
+						 any reasonable classifier. 
+						
+						 Consequently, not a single model neuron produced physiological responses
+						  that could be confused with a biological neuron. 
+						  Was this a defect of the model design (e.g. key mechanisms unaccounted for) 
+						  or of model parameterization? We found that if we introduced models that 
+						  were revised via optimization the revised models overlapped with the
+						   distribution of biological neurons, and were mostly classified as such.
+						
+						   The remaining post-optimization disagreement between models and biological
+							neurons may reflect limitations of model design and can be 
+							investigated by probing the key features used by classifiers
+							to distinguish these two populations.  
 					</li>
 				</ul>
 			</div>
