@@ -15,6 +15,8 @@ Hines, Michael L., and Nicholas T. Carnevale. "NEURON: a tool for neuroscientist
 ![opt_model_info.png](opt_model_info.png)
 
 
+To [download this data as a word document](https://github.com/russelljjarvis/CNS2020/raw/gh-pages/Images/Models_info.docx
+)
 
 
  
