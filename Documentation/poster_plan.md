@@ -24,12 +24,18 @@ What are the seven models that you mention that you optimize? Can you make a tab
 | Adaptive Exponential | Olfactory bulb (main) mitral cell | 16014787 | https://www.neuroelectro.org/neuron/129/ |
 | Adaptive Exponential | Hippocampus CA1 pyramidal cell | 16014787 | https://www.neuroelectro.org/neuron/85/ |
 
+### Published Model Source:
 
+### Izhikevich model
+Izhikevich, Eugene M. "Simple model of spiking neurons." IEEE Transactions on neural networks 14.6 (2003): 1569-1572.
+PubMed 15484883
+
+### Adaptive Exponential model
+Brette, Romain, and Wulfram Gerstner. "Adaptive exponential integrate-and-fire model as an effective description of neuronal activity." Journal of neurophysiology 94.5 (2005): 3637-3642
+PubMed 16014787
 
 ![cerebellum purkinje cell](cerebellum_purkinje_data.png)
 To do this programmatically the neurolex id is used: sao471801888
-
-
 
 ![neocortical layer 4/5 pyramidal cell](neo_cortical_4_5.png)
 
@@ -37,18 +43,7 @@ To do this programmatically the neurolex id is used: sao471801888
 
 ![Olfactory Bulb Mitral Cell](olf_bulb_mit.png)
 
-## Optimized Models Used:
-
-## Izhikevich model
-Izhikevich, Eugene M. "Simple model of spiking neurons." IEEE Transactions on neural networks 14.6 (2003): 1569-1572.
-PubMed 15484883
-
-## Adaptive Exponential model
-Brette, Romain, and Wulfram Gerstner. "Adaptive exponential integrate-and-fire model as an effective description of neuronal activity." Journal of neurophysiology 94.5 (2005): 3637-3642
-PubMed 16014787
 ![opt_model_info.png](../Images/opt_model_info.png)
-
-
 
 
 
