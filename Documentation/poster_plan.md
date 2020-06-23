@@ -9,21 +9,20 @@
 | Olfactory bulb (main) mitral cell | 129 | nlx_anat_100201 | https://www.neuroelectro.org/neuron/129/ |
 | Hippocampus CA1 pyramidal cell | 85 | sao830368389 | https://www.neuroelectro.org/neuron/85/ |
 
-```
+
 What are the seven models that you mention that you optimize? Can you make a table with seven rows. Give each model a name. What is the original publication (author and pubmed id). What is the link to the data used? I can't make sense of what you are showing here.
-```
 
 
-| Model Class | cell type| pubmedid | data source link | 
+| Model Class | cell type| PubMed id | data source link | 
 | ------------- |:-------------:| -----:| -----:|
-| Izhikevich model | purkinje | 15484883 | sao471801888 |
-| Izhikevich model | Neocortex pyramidal cell layer 5-6| 15484883 | nifext_50| 
-| Izhikevich model | Olfactory bulb (main) mitral cell | 15484883 | nlx_anat_100201 |
-| Izhikevich model | Hippocampus CA1 pyramidal cell | 15484883 | sao830368389 |
-| Adaptive Exponential model| purkinje | 16014787 | sao471801888 |
-| Adaptive Exponential model| Neocortex pyramidal cell layer 5-6| 16014787 | nifext_50| 
-| Adaptive Exponential model| Olfactory bulb (main) mitral cell | 16014787 | nlx_anat_100201 |
-| Adaptive Exponential model| Hippocampus CA1 pyramidal cell | 16014787 | sao830368389 |
+| Izhikevich model | purkinje | 15484883 | https://www.neuroelectro.org/neuron/18/ |
+| Izhikevich model | Neocortex pyramidal cell layer 5-6| 15484883 | https://www.neuroelectro.org/neuron/111/| 
+| Izhikevich model | Olfactory bulb (main) mitral cell | 15484883 | https://www.neuroelectro.org/neuron/129/ |
+| Izhikevich model | Hippocampus CA1 pyramidal cell | 15484883 | https://www.neuroelectro.org/neuron/85/ |
+| Adaptive Exponential model| purkinje | 16014787 | https://www.neuroelectro.org/neuron/18/ |
+| Adaptive Exponential model| Neocortex pyramidal cell layer 5-6| 16014787 | https://www.neuroelectro.org/neuron/111/ | 
+| Adaptive Exponential model| Olfactory bulb (main) mitral cell | 16014787 | https://www.neuroelectro.org/neuron/129/ |
+| Adaptive Exponential model| Hippocampus CA1 pyramidal cell | 16014787 | https://www.neuroelectro.org/neuron/85/ |
 
 At the website:
 
