@@ -2,7 +2,7 @@
 ## Data used to constrain each of 8 Cellular Models
 
 
-| cell type| neuroelectro id | neurolex id| link |
+| cell type| neuroelectro id | neurolex id| data source link |
 | ------------- |:-------------:| -----:| -----:|
 | Cerebellar Purkinje Cell | 18 | sao471801888 | https://www.neuroelectro.org/neuron/18/ |
 | Neocortex pyramidal cell layer 5-6| 111 | nifext_50| https://www.neuroelectro.org/neuron/111/ |
