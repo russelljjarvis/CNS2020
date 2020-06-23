@@ -24,7 +24,7 @@ What are the seven models that you mention that you optimize? Can you make a tab
 | Adaptive Exponential | Olfactory bulb (main) mitral cell | 16014787 | https://www.neuroelectro.org/neuron/129/ |
 | Adaptive Exponential | Hippocampus CA1 pyramidal cell | 16014787 | https://www.neuroelectro.org/neuron/85/ |
 
-### Published Model Source:
+### Publications Associated with Model Sources:
 
 ### Izhikevich model
 Izhikevich, Eugene M. "Simple model of spiking neurons." IEEE Transactions on neural networks 14.6 (2003): 1569-1572.
