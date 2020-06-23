@@ -11,8 +11,8 @@
 
 
 At the website:
-https://www.neuroelectro.org/neuron
-Putting the id numbers on the end of the URL is sufficient to get each data source. For example to get the Cerebellum Purkinje cell:
+
+Appending the `id` number to the end of the URL https://www.neuroelectro.org/neuron is sufficient to get each data source. For example to get the Cerebellum Purkinje cell:
 
 https://www.neuroelectro.org/neuron/18
 
