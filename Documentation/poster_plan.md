@@ -43,9 +43,6 @@ To do this programmatically the neurolex id is used: sao471801888
 
 ![Olfactory Bulb Mitral Cell](olf_bulb_mit.png)
 
-![opt_model_info.png](../Images/opt_model_info.png)
-
-
 
 
 
