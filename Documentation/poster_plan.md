@@ -3,6 +3,7 @@
 
 
 | cell type| id | neurolex id| 
+| ------------- |:-------------:| -----:|
 | purkinje | 18 | sao471801888 |
 | Neocortex pyramidal cell layer 5-6| 111 | nifext_50| 
 | Olfactory bulb (main) mitral cell | 129 | nlx_anat_100201 |
