@@ -1,5 +1,13 @@
 
- 
+## Data used to constrain each of 8 cells:
+![cerebellum purkinje cell](cerebellum_purkinje_data.png)
+
+![neocortical layer 4/5 pyramidal cell](neo_cortical_4_5.png)
+
+![Hippocampus CA1 pyramidal Neuron](ca1.png)
+
+![Olfactory Bulb Mitral Cell](olf_bulb_mit.png)
+
 ## Optimized Models Used:
 
 ## Izhikevich model
