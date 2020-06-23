@@ -15,14 +15,14 @@ What are the seven models that you mention that you optimize? Can you make a tab
 
 | Model Class | cell type| PubMed id | data source link | 
 | ------------- |:-------------:| -----:| -----:|
-| Izhikevich model | purkinje | 15484883 | https://www.neuroelectro.org/neuron/18/ |
-| Izhikevich model | Neocortex pyramidal cell layer 5-6| 15484883 | https://www.neuroelectro.org/neuron/111/| 
-| Izhikevich model | Olfactory bulb (main) mitral cell | 15484883 | https://www.neuroelectro.org/neuron/129/ |
-| Izhikevich model | Hippocampus CA1 pyramidal cell | 15484883 | https://www.neuroelectro.org/neuron/85/ |
-| Adaptive Exponential model| purkinje | 16014787 | https://www.neuroelectro.org/neuron/18/ |
-| Adaptive Exponential model| Neocortex pyramidal cell layer 5-6| 16014787 | https://www.neuroelectro.org/neuron/111/ | 
-| Adaptive Exponential model| Olfactory bulb (main) mitral cell | 16014787 | https://www.neuroelectro.org/neuron/129/ |
-| Adaptive Exponential model| Hippocampus CA1 pyramidal cell | 16014787 | https://www.neuroelectro.org/neuron/85/ |
+| Izhikevich | purkinje | 15484883 | https://www.neuroelectro.org/neuron/18/ |
+| Izhikevich | Neocortex pyramidal cell layer 5-6| 15484883 | https://www.neuroelectro.org/neuron/111/| 
+| Izhikevich | Olfactory bulb (main) mitral cell | 15484883 | https://www.neuroelectro.org/neuron/129/ |
+| Izhikevich | Hippocampus CA1 pyramidal cell | 15484883 | https://www.neuroelectro.org/neuron/85/ |
+| Adaptive Exponential | purkinje | 16014787 | https://www.neuroelectro.org/neuron/18/ |
+| Adaptive Exponential | Neocortex pyramidal cell layer 5-6| 16014787 | https://www.neuroelectro.org/neuron/111/ | 
+| Adaptive Exponential | Olfactory bulb (main) mitral cell | 16014787 | https://www.neuroelectro.org/neuron/129/ |
+| Adaptive Exponential | Hippocampus CA1 pyramidal cell | 16014787 | https://www.neuroelectro.org/neuron/85/ |
 
 At the website:
 
