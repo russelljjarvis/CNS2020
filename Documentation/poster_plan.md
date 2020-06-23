@@ -24,11 +24,7 @@ What are the seven models that you mention that you optimize? Can you make a tab
 | Adaptive Exponential | Olfactory bulb (main) mitral cell | 16014787 | https://www.neuroelectro.org/neuron/129/ |
 | Adaptive Exponential | Hippocampus CA1 pyramidal cell | 16014787 | https://www.neuroelectro.org/neuron/85/ |
 
-At the website:
 
-Appending the `id` number to the end of the URL https://www.neuroelectro.org/neuron is sufficient to get each data source. For example to get the Cerebellum Purkinje cell:
-
-https://www.neuroelectro.org/neuron/18
 
 ![cerebellum purkinje cell](cerebellum_purkinje_data.png)
 To do this programmatically the neurolex id is used: sao471801888
