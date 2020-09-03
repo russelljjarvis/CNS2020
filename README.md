@@ -1,7 +1,10 @@
-# Dynamic Poster for CNS 2020
+# Dynamic Poster for CNS 2020Dynamic Poster for CNS 2020
 
-https://russelljjarvis.github.io/CNS2020/index.html
- 
+The [result](https://russelljjarvis.github.io/CNS2020/index.html
+) was not good, so we went with [superior Rmd workflow](https://russelljjarvis.github.io/AllenEFELDruckmanFeatures/CNS_poster_2020.html
+) instead.
+
+
 ## Optimized Models Used:
 
 Izhikevich, Eugene M. "Simple model of spiking neurons." IEEE Transactions on neural networks 14.6 (2003): 1569-1572.
